@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site of Djibo </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- header  -->
+    <header>
+        <!-- menu responsive -->
+        
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <p><span>La TEAM</span>BANDIT</p>
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Team</a></li>
+            <li><a href="#cars">Membres</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="login_btn">LOGIN</button>
+    </header>
+    <!-- section Acceuil -->
+     
+    <section id="home">
+        <div class="left">
+            <h1>Team Bandit <span>Prod</span> Cheaper From Mali</h1>
+            <p>Bienvenue chez team bandit </p>
+            <a href="#">BUY NOW</a>
+        </div>
+        <div class="right">
+            <img src="images/music.jpg">
+        </div>
+    </section>
+
+
+
+
+    <!-- section vehicule -->
+
+    <section id="cars">
+        <h1 class="section_title">les membres</h1>
+        <div class="images">
+            <ul>
+                <li class="car">
+                   <div>
+                       <img src="images/sec.jpg" alt="">
+                   </div>
+                   <span>Sec bandit</span>
+                   <span class="prix">Rappeur</span>
+                   <a href="#">contact: 74002918</a>
+                </li>
+                <li class="car">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <span>Putin</span>
+                    <span class="prix">Membre</span>
+                    <a href="#">contact:</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <span>Brehima</span>
+                    <span class="prix">Manadje</span>
+                    <a href="#">contact:</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <span>Bakozy</span>
+                    <span class="prix">Membre</span>
+                    <a href="#">contact: 71757505</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <span>LAMBORGHINI</span>
+                    <span class="prix">300.000$</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <span>LAMBORGHINI</span>
+                    <span class="prix">300.000$</span>
+                    <a href="#">ACHETER MAINTENANT</a>
+                 </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- section services -->
+
+    <section id="services">
+        <h1 class="section_title">Nos Services</h1>
+        <div class="list_services">
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Podum</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat optio inventore praesentium laudantium consequuntur earum placeat voluptas qui velit dolores voluptatibus saepe veniam laborum, maiores temporibus eius incidunt facilis voluptatem.</p>
+                 <a href="#" class="read_more">Lire Plus</a>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Tournage</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
+                 <a href="#" class="read_more">Lire Plus</a>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Show case</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
+                 <a href="#" class="read_more">Lire Plus</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- section contact -->
+
+    <section id="contact">
+        <h1 class="section_title">Nos Services</h1>
+        <div class="localisation_contact_div">
+            <div class="localisation">
+                <h3>Notre Adresse</h3>
+                <iframe src="https://www.google.fr/maps/place/Bougouni/@11.4215983,-7.5047821,14z/data=!3m1!4b1!4m6!3m5!1s0xe4d99cc4b4c39af:0x48c503330f3e8661!8m2!3d11.4182881!4d-7.4705935!16zL20vMDZxMXZj?entry=ttu"></iframe>
+            </div>
+
+            <div class="form_contact">
+                <h3>Envoyer un message</h3>
+                <form action="#">
+                    <input type="text"placeholder="Nom">
+                    <input type="email"placeholder="Adresse Mail">
+                    <input type="text"placeholder="Objet">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+    </section>
+ 
+
+    <footer>
+        <p>Team Bandit Copyright 2023 </p>
+    </footer>
+
+    <script>
+        //menu responsive code JS
+
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive') ;
+        }
+
+    </script>
+</body>
+</html>
